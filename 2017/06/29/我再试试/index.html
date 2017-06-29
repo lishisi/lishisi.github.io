@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>模块化 | 程序媛</title>
+  <title>我再试试 | 程序媛</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简单的使用js文件作为模块的缺陷 全局变量污染 引用js文件的时候，次序非常重要，而且比较麻烦  模块化的优势 可以将公共的部分定义成模块，方便复用 解决全局变量污染的问题 模块之间的依赖关系，非常明确，而且在应用模块的时候，根本不需要考虑依赖的先后顺序问题。">
-<meta name="keywords" content="javascript,模块化">
+  <meta name="description" content="我再试试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="模块化">
-<meta property="og:url" content="http://yoursite.com/2017/06/29/模块化/index.html">
+<meta property="og:title" content="我再试试">
+<meta property="og:url" content="http://yoursite.com/2017/06/29/我再试试/index.html">
 <meta property="og:site_name" content="程序媛">
-<meta property="og:description" content="简单的使用js文件作为模块的缺陷 全局变量污染 引用js文件的时候，次序非常重要，而且比较麻烦  模块化的优势 可以将公共的部分定义成模块，方便复用 解决全局变量污染的问题 模块之间的依赖关系，非常明确，而且在应用模块的时候，根本不需要考虑依赖的先后顺序问题。">
-<meta property="og:updated_time" content="2017-06-29T11:34:45.331Z">
+<meta property="og:description" content="我再试试">
+<meta property="og:updated_time" content="2017-06-29T13:22:22.170Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="模块化">
-<meta name="twitter:description" content="简单的使用js文件作为模块的缺陷 全局变量污染 引用js文件的时候，次序非常重要，而且比较麻烦  模块化的优势 可以将公共的部分定义成模块，方便复用 解决全局变量污染的问题 模块之间的依赖关系，非常明确，而且在应用模块的时候，根本不需要考虑依赖的先后顺序问题。">
+<meta name="twitter:title" content="我再试试">
+<meta name="twitter:description" content="我再试试">
   
     <link rel="alternative" href="/atom.xml" title="程序媛" type="application/atom+xml">
   
@@ -158,74 +157,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-模块化" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-我再试试" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      模块化
+      我再试试
     </h1>
   
 
         
-        <a href="/2017/06/29/模块化/" class="archive-article-date">
-  	<time datetime="2017-06-29T11:16:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
+        <a href="/2017/06/29/我再试试/" class="archive-article-date">
+  	<time datetime="2017-06-29T13:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简单的使用js文件作为模块的缺陷"><a href="#简单的使用js文件作为模块的缺陷" class="headerlink" title="简单的使用js文件作为模块的缺陷"></a>简单的使用js文件作为模块的缺陷</h2><ol>
-<li>全局变量污染</li>
-<li>引用js文件的时候，次序非常重要，而且比较麻烦</li>
-</ol>
-<h2 id="模块化的优势"><a href="#模块化的优势" class="headerlink" title="模块化的优势"></a>模块化的优势</h2><ol>
-<li>可以将公共的部分定义成模块，方便复用</li>
-<li>解决全局变量污染的问题</li>
-<li>模块之间的依赖关系，非常明确，而且在应用模块的时候，根本不需要考虑依赖的先后顺序问题。</li>
-</ol>
-<a id="more"></a>
-<h2 id="前端模块化"><a href="#前端模块化" class="headerlink" title="前端模块化"></a>前端模块化</h2><h3 id="模块化的标准"><a href="#模块化的标准" class="headerlink" title="模块化的标准"></a>模块化的标准</h3><ol>
-<li><p>CommonJS: 是一个模块化的标准。Node.js在使用的一个模块化的标准</p>
-</li>
-<li><p>AMD: Async Module Definition, 在CommonJS基础上衍生出来的适用于前端开发中的模块化标准</p>
-</li>
-</ol>
-<p>AMD. 尽早将所有的模块全部加载进来  require.js</p>
-<ol>
-<li>CMD: Common Module Definition<br>在CommonJS基础上衍生出来的适用于前端开发中的模块化标准</li>
-</ol>
-<p>CMD. 用到之的时候再加载， as lazy as possible   sea.js</p>
-<p>AMD没有明显的BUG，CMD明显没有BUG</p>
-<h2 id="模块化的是实现（require-js）"><a href="#模块化的是实现（require-js）" class="headerlink" title="模块化的是实现（require.js）"></a>模块化的是实现（require.js）</h2><p>require.js 只是一个js文件，这个js文件可以帮助我们实现前端模块化，他遵循的标准就是AMD标准。</p>
-<h3 id="定义模块"><a href="#定义模块" class="headerlink" title="定义模块"></a>定义模块</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="comment">//模块中所有的内容</span></div><div class="line">	<span class="built_in">console</span>.log(<span class="string">"Hello, 我是一个模块"</span>);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<h3 id="引用模块"><a href="#引用模块" class="headerlink" title="引用模块"></a>引用模块</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>([<span class="string">"模块的名称"</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>如果模块只是执行一些代码实现指定的功能，那么直接引用该模块，功能即可实现。<br>但是如果模块的存在是为了给我们提供一些方法，对象，其他的内容让我们使用的话，就需要给这个模块一个产出，使用return语句将要提供给别人使用的内容进行返回，使用该模块的使用，需要在require的第二个参数的函数中书写一个形参来接收这个内容，就能达到使用的效果了！</p>
-<h2 id="模块依赖项的处理"><a href="#模块依赖项的处理" class="headerlink" title="模块依赖项的处理"></a>模块依赖项的处理</h2><p>如果定义一个模块的时候，这个模块要依赖于其他模块来实现，那么我们需要给这个模块指定依赖项</p>
-<p>define([“依赖项1”,”依赖项2”…”依赖项N”], function(){<br>    //模块的功能代码<br>})</p>
-<p>如果模块的依赖项有给模块提供内容使用，那么需要在当前模块的回调函数中添加形参来接收依赖项模块的返回值，这里的形参和依赖项是一一对应的，如果存在好多依赖项，有的依赖项有产出，有的没有，那我们一般会将所有有产出的依赖项放在前面，没有的放在后面，这样可以省略掉没有产出模块的形参</p>
-<h2 id="requirejs的入口文件设置"><a href="#requirejs的入口文件设置" class="headerlink" title="requirejs的入口文件设置"></a>requirejs的入口文件设置</h2><h3 id="data-main"><a href="#data-main" class="headerlink" title="data-main"></a>data-main</h3><p>可以给请求requirejs的script标签设置一个data-main属性，这个属性中放的是一个文件的路径，在requirejs加载完毕之后，会自动去执行data-main这个路径中指向的文件中的js代码！</p>
-<p><strong>data-main中的内容是异步加载的，如果下面有要基于data-main的功能实现的内容，那么requirejs不能保证data-main是在下面的内容之前执行的</strong></p>
-<h2 id="模块路径查找的问题"><a href="#模块路径查找的问题" class="headerlink" title="模块路径查找的问题"></a>模块路径查找的问题</h2><ol>
-<li><p>如果直接在html文件中书写script标签，在标签内使用require来加载某个模块，那么会以当前的这个html文件作为参照，去找相对路径</p>
-</li>
-<li><p>如果我们是在入口文件中使用require加载的模块，那么这个时候是参照data-main指定的这个入口文件所在的目录来找模块的路径的！</p>
-</li>
-<li><p>如果通过config指定了requirejs的baseUrl，那么所有的模块路径查找都会以这个baseUrl作为基础，去查找</p>
-</li>
-</ol>
-<h2 id="requirejs可以通过config来配置一些内容"><a href="#requirejs可以通过config来配置一些内容" class="headerlink" title="requirejs可以通过config来配置一些内容"></a>requirejs可以通过config来配置一些内容</h2><h3 id="baseUrl"><a href="#baseUrl" class="headerlink" title="baseUrl"></a>baseUrl</h3><p>require.config({<br>    //所有模块的路径查找，都会以这个baseUrl指定的路径为基础<br>    //一般情况下就是找所有模块都能够共享的目录，作为baseUrl<br>    baseUrl: “”,</p>
-<pre><code>//paths属性可以为每一个模块配置别名
-//以后在使用模块的时候，不需要再去写那么长的真实路径了，而直接使用别名即可
-paths: {
-    //键： 别名名称
-    //值： 真实的模块路径
-    &quot;xm&quot;: &quot;modules1/modules2/modules3/moduleXM&quot; 
-}
-</code></pre><p>});</p>
+        <p>我再试试</p>
 
       
 
@@ -265,21 +217,6 @@ paths: {
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">模块化</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -330,7 +267,7 @@ paths: {
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/29/模块化/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/29/我再试试/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -344,18 +281,9 @@ paths: {
   
 <nav id="article-nav">
   
-    <a href="/2017/06/29/js基础复习/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          js基础复习
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/06/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2017/06/29/我在调试/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我在调试</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -371,8 +299,8 @@ paths: {
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2017/06/29/模块化/", 
-    sourceId: "模块化",
+    url: "http://yoursite.com/2017/06/29/我再试试/", 
+    sourceId: "我再试试",
     productKey: "4e8fcf0a179044a085c1e72f5f77b074",
     target: "cloud-tie-wrapper"
   };
