@@ -164,7 +164,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/21/数组的方法/">数组的方法整理</a>
+      <a class="article-title" href="/2017/08/21/数组的方法/">数组的方法整理（不完全）</a>
     </h1>
   
 
@@ -178,7 +178,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         
-        <h1 id="数组的方法整理（不完全）"><a href="#数组的方法整理（不完全）" class="headerlink" title="数组的方法整理（不完全）"></a>数组的方法整理（不完全）</h1><h2 id="pop"><a href="#pop" class="headerlink" title="pop"></a>pop</h2><ul>
+        <h2 id="pop"><a href="#pop" class="headerlink" title="pop"></a>pop</h2><ul>
 <li>删除数组最后一位元素<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line">arr.pop();  <span class="comment">// 3</span></div><div class="line">arr;  <span class="comment">// [1, 2]</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -207,9 +207,12 @@
 </li>
 </ul>
 <h2 id="slice"><a href="#slice" class="headerlink" title="slice"></a>slice</h2><ul>
-<li>返回一个从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组对象中<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line">arr.slice(<span class="number">1</span>, <span class="number">2</span>); <span class="comment">// [2]</span></div><div class="line">arr;  <span class="comment">// [1, 2, 3, 4]</span></div><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line">arr.slice();  <span class="comment">// [1, 2, 3, 4]</span></div><div class="line">arr.slice(<span class="number">1</span>); <span class="comment">// [2, 3, 4]</span></div></pre></td></tr></table></figure></li>
+<li>返回一个从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组对象中<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line">arr.slice(<span class="number">1</span>, <span class="number">2</span>); <span class="comment">// [2]</span></div><div class="line">arr;  <span class="comment">// [1, 2, 3, 4]</span></div><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line">arr.slice();  <span class="comment">// [1, 2, 3, 4]</span></div><div class="line">arr.slice(<span class="number">1</span>); <span class="comment">// [2, 3, 4]</span></div></pre></td></tr></table></figure>
+</li>
 </ul>
-
+<h2 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">数组.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">value, index, arr</span>)</span>&#123;</div><div class="line">	</div><div class="line">&#125;)</div><div class="line"><span class="comment">//遍历数组，遍历到每个元素的时候，都会调用这个回调函数，</span></div><div class="line"><span class="comment">//value： 当前正在遍历的元素</span></div><div class="line"><span class="comment">//index: 当前正在遍历的元素的索引</span></div><div class="line"><span class="comment">//arr； 当前正在遍历的数组对象</span></div></pre></td></tr></table></figure>
+<h2 id="map"><a href="#map" class="headerlink" title="map"></a>map</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">数组.map(<span class="function"><span class="keyword">function</span>(<span class="params">value, index, arr</span>)</span>&#123;</div><div class="line">	</div><div class="line">&#125;)</div><div class="line"><span class="comment">//遍历数组，遍历到每个元素的时候，都会调用这个回调函数，</span></div><div class="line"><span class="comment">//value： 当前正在遍历的元素</span></div><div class="line"><span class="comment">//index: 当前正在遍历的元素的索引</span></div><div class="line"><span class="comment">//arr； 当前正在遍历的数组对象</span></div><div class="line"></div><div class="line"><span class="comment">//map方法有返回值：</span></div><div class="line"><span class="comment">//每次调用回到函数，都会产生一个返回值，将所有调用返回的返回值组合成一个新的数组，就是map方法的返回值了</span></div></pre></td></tr></table></figure>
+<h2 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">数组.filter(<span class="function"><span class="keyword">function</span>(<span class="params">value, index, arr</span>)</span>&#123;</div><div class="line">	</div><div class="line">&#125;)</div><div class="line"><span class="comment">//遍历数组，遍历到每个元素的时候，都会调用这个回调函数，如果回调函数返回的是true，则当前元素会被加入到返回值数组当中</span></div><div class="line"></div><div class="line"><span class="comment">//value： 当前正在遍历的元素</span></div><div class="line"><span class="comment">//index: 当前正在遍历的元素的索引</span></div><div class="line"><span class="comment">//arr； 当前正在遍历的数组对象</span></div></pre></td></tr></table></figure>
       
 
       
@@ -251,33 +254,32 @@
 
 
   
-    <article id="post-面向对象三大特性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-懒加载实现原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/29/面向对象三大特性/">面向对象三大特性</a>
+      <a class="article-title" href="/2017/02/22/懒加载实现原理/">懒加载的实现原理</a>
     </h1>
   
 
         
-        <a href="/2017/06/29/面向对象三大特性/" class="archive-article-date">
-  	<time datetime="2017-06-29T11:44:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
+        <a href="/2017/02/22/懒加载实现原理/" class="archive-article-date">
+  	<time datetime="2017-02-22T13:46:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
+        <p>懒加载作为一种提升性能，优化的手段已经在web开发中广泛应用，那么到底什么是懒加载它又是基于什么原理实现的呢？</p>
+<p>懒加载说的直白点就是先做一部分事情，剩下的事情等到需要做的时候再做。</p>
+<p>我们这里说说在前端开发中用的比较多的图片懒加载技术，所谓图片懒加载就是页面刷新的时候只是请求视图之前的图片资源，对于之后的图片资源等到他在视图范围内之后再进行加载，这样子较少了很多http请求，很好的web应用程序的性能。<br>
         
-        <h2 id="面向对象的三大特性"><a href="#面向对象的三大特性" class="headerlink" title="面向对象的三大特性"></a>面向对象的三大特性</h2><ul>
-<li>封装：将功能的具体实现封装在对象内部，只对外界暴露指定的接口，外界在使用的时候，只需要关心接口如何使用，而不需要关心对象内部功能的具体实现，这就是封装 （ATM，电脑）</li>
-<li>继承：自己没有的东西，别人有，拿过来使用，就是继承（js中的继承是基于对象的！）</li>
-<li>多态：js中没有多态！</li>
-</ul>
-
+          <a class="article-more-a" href="/2017/02/22/懒加载实现原理/#more">more >></a>
+        
       
 
       
@@ -292,14 +294,6 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">面对对象</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">特性</a>
-        		</li>
       		
 		</ul>
 	</div>
@@ -308,7 +302,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/29/面向对象三大特性/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/02/22/懒加载实现原理/">展开全文 >></a>
         </p>
       
 
@@ -323,32 +317,37 @@
 
 
   
-    <article id="post-继承的介绍" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-模块化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/29/继承的介绍/">继承的介绍</a>
+      <a class="article-title" href="/2016/09/12/模块化/">模块化</a>
     </h1>
   
 
         
-        <a href="/2017/06/29/继承的介绍/" class="archive-article-date">
-  	<time datetime="2017-06-29T11:43:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
+        <a href="/2016/09/12/模块化/" class="archive-article-date">
+  	<time datetime="2016-09-12T13:33:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="继承的实现方式"><a href="#继承的实现方式" class="headerlink" title="继承的实现方式"></a>继承的实现方式</h2><ol>
-<li>混入式继承（mix-in）<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;&#125;;</div><div class="line"><span class="keyword">var</span> obj1 = &#123;</div><div class="line">	<span class="attr">name</span>: <span class="string">""</span>,</div><div class="line">	<span class="attr">age</span>: <span class="number">18</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> k <span class="keyword">in</span> obj1)&#123;</div><div class="line">	obj[k] = obj1[k];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
+        <h2 id="简单的使用js文件作为模块的缺陷"><a href="#简单的使用js文件作为模块的缺陷" class="headerlink" title="简单的使用js文件作为模块的缺陷"></a>简单的使用js文件作为模块的缺陷</h2><ol>
+<li>全局变量污染</li>
+<li>引用js文件的时候，次序非常重要，而且比较麻烦</li>
+</ol>
+<h2 id="模块化的优势"><a href="#模块化的优势" class="headerlink" title="模块化的优势"></a>模块化的优势</h2><ol>
+<li>可以将公共的部分定义成模块，方便复用</li>
+<li>解决全局变量污染的问题</li>
+<li>模块之间的依赖关系，非常明确，而且在应用模块的时候，根本不需要考虑依赖的先后顺序问题。</li>
 </ol>
         
-          <a class="article-more-a" href="/2017/06/29/继承的介绍/#more">more >></a>
+          <a class="article-more-a" href="/2016/09/12/模块化/#more">more >></a>
         
       
 
@@ -366,7 +365,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">继承</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">模块化</a>
         		</li>
       		
 		</ul>
@@ -376,7 +375,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/29/继承的介绍/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/09/12/模块化/">展开全文 >></a>
         </p>
       
 
@@ -391,35 +390,29 @@
 
 
   
-    <article id="post-原型介绍" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-返回顶部" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/29/原型介绍/">原型介绍</a>
+      <a class="article-title" href="/2016/05/11/返回顶部/">返回顶部（原生js）</a>
     </h1>
   
 
         
-        <a href="/2017/06/29/原型介绍/" class="archive-article-date">
-  	<time datetime="2017-06-29T11:41:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
+        <a href="/2016/05/11/返回顶部/" class="archive-article-date">
+  	<time datetime="2016-05-11T12:47:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h2><h3 id="原型的概念"><a href="#原型的概念" class="headerlink" title="原型的概念"></a>原型的概念</h3><p>构造函数在创建出来的时候，系统会默认的帮构造函数创建并且关联一个空对象，这个对象就是原型</p>
-<h3 id="原型的作用"><a href="#原型的作用" class="headerlink" title="原型的作用"></a>原型的作用</h3><p>在原型中的所有的属性和方法，可以被和其关联的构造函数创建出来的所有的对象共享！</p>
-<h3 id="原型的访问方式"><a href="#原型的访问方式" class="headerlink" title="原型的访问方式"></a>原型的访问方式</h3><ol>
-<li>构造函数.prototype</li>
-<li>对象.<strong>proto</strong> (有兼容性问题)</li>
-</ol>
         
-          <a class="article-more-a" href="/2017/06/29/原型介绍/#more">more >></a>
-        
+        <p>js代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">//需求1: 页面滑动到被卷去的头部超过500px显示返回顶部箭头,不足隐藏;</span></div><div class="line">    <span class="keyword">var</span> img = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"img"</span>)[<span class="number">0</span>];</div><div class="line">    <span class="keyword">var</span> timer = <span class="literal">null</span>;</div><div class="line">    <span class="keyword">var</span> leader = <span class="number">0</span>;</div><div class="line">    <span class="comment">//绑定页面滑动事件;</span></div><div class="line">    <span class="built_in">window</span>.onscroll = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">//判断: 被卷去的头部的距离;和500的关系;</span></div><div class="line">        <span class="keyword">if</span>(scroll().top &gt; <span class="number">1000</span>)&#123;</div><div class="line">            <span class="comment">//显示img</span></div><div class="line">            show(img);</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            <span class="comment">//隐藏img</span></div><div class="line">            hide(img);</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//我们用也页面滑动为leader赋值,让leader成为页面的纵坐标;!!!</span></div><div class="line">        leader = scroll().top;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    <span class="comment">//需求2: 点击图片,让页面滑动到最顶端;</span></div><div class="line">            <span class="comment">//新技术: 移动页面;  BOM的一个方法:</span></div><div class="line">            <span class="comment">//      window.scrollTo(x,y);   x代表横坐标;,y代表纵坐标;</span></div><div class="line">    img.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">//瞬间闪动到页面最顶端;</span></div><div class="line">		<span class="comment">//window.scrollTo(0,0);</span></div><div class="line"></div><div class="line">        <span class="comment">//模拟缓动动画,页面滑动到最顶端;</span></div><div class="line">            <span class="comment">//就是把缓动的逻辑拿过来,把移动盒子变成移动页面;</span></div><div class="line">        clearInterval(timer);</div><div class="line">        timer = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="comment">//0.leader的获取;  === 页面的纵坐标;</span></div><div class="line">                    <span class="comment">//页面的纵坐标  === 页面被卷去的头部;</span></div><div class="line">            <span class="comment">//1.获取步长;</span></div><div class="line">            <span class="keyword">var</span> step = (<span class="number">0</span> - leader)/<span class="number">10</span>;</div><div class="line">            <span class="comment">//2.二次处理</span></div><div class="line">            step = step &gt; <span class="number">0</span>?<span class="built_in">Math</span>.ceil(step):<span class="built_in">Math</span>.floor(step);</div><div class="line">            <span class="comment">//3.赋值;</span></div><div class="line">            leader = leader + step;</div><div class="line">            <span class="built_in">window</span>.scrollTo(<span class="number">0</span>,leader);</div><div class="line">            <span class="comment">//4.清除定时器;</span></div><div class="line">            <span class="keyword">if</span>(leader === <span class="number">0</span>)&#123;</div><div class="line">                clearInterval(timer);</div><div class="line">                alert(<span class="string">"已经到达页面顶端"</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;,<span class="number">30</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
       
 
       
@@ -436,7 +429,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">原型</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">返回顶部</a>
         		</li>
       		
 		</ul>
@@ -446,7 +439,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/29/原型介绍/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/05/11/返回顶部/">展开全文 >></a>
         </p>
       
 
@@ -461,34 +454,31 @@
 
 
   
-    <article id="post-面向对象举例" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-楼层跳跃" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/29/面向对象举例/">面向对象举例</a>
+      <a class="article-title" href="/2016/05/11/楼层跳跃/">楼层跳跃（原生js）</a>
     </h1>
   
 
         
-        <a href="/2017/06/29/面向对象举例/" class="archive-article-date">
-  	<time datetime="2017-06-29T11:40:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
+        <a href="/2016/05/11/楼层跳跃/" class="archive-article-date">
+  	<time datetime="2016-05-11T12:47:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="面向对象编程举例"><a href="#面向对象编程举例" class="headerlink" title="面向对象编程举例"></a>面向对象编程举例</h2><ol>
-<li>初步实现（面向过程的方式）</li>
-<li>函数封装 </li>
-<li>对象封装</li>
-</ol>
         
-          <a class="article-more-a" href="/2017/06/29/面向对象举例/#more">more >></a>
-        
+        <p>html代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"> &lt;ol&gt;</div><div class="line">    &lt;li&gt;男装&lt;/li&gt;</div><div class="line">    &lt;li&gt;女装&lt;/li&gt;</div><div class="line">    &lt;li&gt;童装&lt;/li&gt;</div><div class="line">    &lt;li&gt;孕装&lt;/li&gt;</div><div class="line">    &lt;li&gt;老年&lt;/li&gt;</div><div class="line">&lt;/ol&gt;</div><div class="line"></div><div class="line">&lt;ul&gt;</div><div class="line">    &lt;li&gt;男装区&lt;/li&gt;</div><div class="line">    &lt;li&gt;女装区&lt;/li&gt;</div><div class="line">    &lt;li&gt;童装区&lt;/li&gt;</div><div class="line">    &lt;li&gt;孕装区&lt;/li&gt;</div><div class="line">    &lt;li&gt;老年装区&lt;/li&gt;</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure></p>
+<p>css代码<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;</div><div class="line">    * &#123;</div><div class="line">        padding: 0;</div><div class="line">        margin: 0;</div><div class="line">        list-style: none;</div><div class="line">    &#125;</div><div class="line">    ol &#123;</div><div class="line">        position: fixed;</div><div class="line">        top: 50px;</div><div class="line">        left: 50px;</div><div class="line">    &#125;</div><div class="line">    ol li &#123;</div><div class="line">        width: 50px;</div><div class="line">        height: 50px;</div><div class="line">        text-align: center;</div><div class="line">        line-height: 50px;</div><div class="line">        margin-top: -1px;</div><div class="line">        cursor: pointer;</div><div class="line">        border: 1px solid #000;</div><div class="line">    &#125;</div><div class="line">    ul,body,html &#123;</div><div class="line">        width: 100%;</div><div class="line">        height: 100%;</div><div class="line">    &#125;</div><div class="line">    ul li &#123;</div><div class="line">        width: 100%;</div><div class="line">        height: 100%;</div><div class="line">        font: 700 240px/600px "simsun";</div><div class="line">        text-align: center;</div><div class="line">    &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure></p>
+<p>js代码<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">//需求1: 利用js为ol中的li和ul中的li分别上色,而且要一致;</span></div><div class="line">    <span class="keyword">var</span> ul = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"ul"</span>)[<span class="number">0</span>];</div><div class="line">    <span class="keyword">var</span> ol = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"ol"</span>)[<span class="number">0</span>];</div><div class="line">    <span class="keyword">var</span> ulLiArr = ul.getElementsByTagName(<span class="string">"li"</span>);</div><div class="line">    <span class="keyword">var</span> olLiArr = ol.children;</div><div class="line">    <span class="comment">//定义三个变量: 目标位置,当前位置,定时器;</span></div><div class="line">    <span class="keyword">var</span> target=<span class="number">0</span>,leader=<span class="number">0</span>,timer=<span class="literal">null</span>;</div><div class="line"></div><div class="line">    <span class="comment">//颜色数组;</span></div><div class="line">    <span class="keyword">var</span> arrColor = [<span class="string">"skyblue"</span>,<span class="string">"yellowgreen"</span>,<span class="string">"pink"</span>,<span class="string">"orange"</span>,<span class="string">"#ff51ee"</span>];</div><div class="line">    <span class="comment">//for循环为li上色;</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arrColor.length;i++)&#123;</div><div class="line">        ulLiArr[i].style.background = arrColor[i];</div><div class="line">        olLiArr[i].style.background = arrColor[i];</div><div class="line"></div><div class="line">        <span class="comment">//需求2: 点击ol中的li,然后让页面滑动到对应的ul中的li上面;</span></div><div class="line">                <span class="comment">//为ol中的li绑定事件,然后利用缓动动画让页面滑动到指定位置;</span></div><div class="line">                    <span class="comment">//获取指定位置: 点击之后,利用索引值,然后获取到ul中的li该索引值位置的li距离顶部的距离;</span></div><div class="line">        <span class="comment">//步骤:</span></div><div class="line">        <span class="comment">//1.老三步;</span></div><div class="line">        <span class="comment">//2.指定目标位置和当前位置;(最后做)</span></div><div class="line">        <span class="comment">//3.利用缓动动画,让页面走到目标位置;</span></div><div class="line"></div><div class="line">        <span class="comment">//自定义属性,绑定元素的索引值;</span></div><div class="line">        olLiArr[i].index = i;</div><div class="line">        <span class="comment">//1.老三步;</span></div><div class="line">        olLiArr[i].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">            <span class="comment">//2.指定目标位置;(最后做)</span></div><div class="line">            target = ulLiArr[<span class="keyword">this</span>.index].offsetTop;<span class="comment">//点击之后,利用索引值,然后获取到ul中的li该索引值位置的li距离顶部的距离;</span></div><div class="line"></div><div class="line">            <span class="comment">//3.随便给目标位置付一个值,然后利用缓动动画,让页面走到目标位置;</span></div><div class="line">            clearInterval(timer);</div><div class="line">            timer = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">                <span class="comment">//1.获取步长</span></div><div class="line">                <span class="keyword">var</span> step = (target-leader)/<span class="number">10</span>;</div><div class="line">                <span class="comment">//2.二次处理步长</span></div><div class="line">                step = step&gt;<span class="number">0</span>?<span class="built_in">Math</span>.ceil(step):<span class="built_in">Math</span>.floor(step);</div><div class="line">                <span class="comment">//3.f赋值</span></div><div class="line">                leader += step;</div><div class="line">                <span class="built_in">window</span>.scrollTo(<span class="number">0</span>,leader);</div><div class="line">                <span class="comment">//4.清除定时器</span></div><div class="line">                <span class="keyword">if</span>(leader === target)&#123;</div><div class="line">                    clearInterval(timer);</div><div class="line">                &#125;</div><div class="line">            &#125;,<span class="number">30</span>);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">//获取页面的纵坐标;</span></div><div class="line">    <span class="built_in">window</span>.onscroll = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="comment">//页面顶部被卷去多少,纵坐标就是多少</span></div><div class="line">        leader = scroll().top;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
       
 
       
@@ -505,7 +495,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">面向对象</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">楼层跳跃</a>
         		</li>
       		
 		</ul>
@@ -515,7 +505,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/29/面向对象举例/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/05/11/楼层跳跃/">展开全文 >></a>
         </p>
       
 
@@ -532,7 +522,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -646,7 +636,19 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">闭包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">原型</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">变量</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -654,7 +656,23 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">楼层跳跃</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">模块化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">继承</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">返回顶部</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">轮播图</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -663,10 +681,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">特性</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">继承</a>
               </li>
              
               <li class="article-tag-list-item">

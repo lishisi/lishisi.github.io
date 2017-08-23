@@ -7,19 +7,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>数组的方法整理 | 程序媛</title>
+  <title>数组的方法整理（不完全） | 程序媛</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="数组的方法整理（不完全）pop 删除数组最后一位元素123var arr = [1, 2, 3];arr.pop();  // 3arr;  // [1, 2]   shift 删除数组的第一位元素123var arr = [1, 2, 3];arr.shift();  // 1arr;  // [2, 3]   push 往数组的末尾新增一个或多个元素12345var arr = [];arr.">
+  <meta name="description" content="pop 删除数组最后一位元素123var arr = [1, 2, 3];arr.pop();  // 3arr;  // [1, 2]   shift 删除数组的第一位元素123var arr = [1, 2, 3];arr.shift();  // 1arr;  // [2, 3]   push 往数组的末尾新增一个或多个元素12345var arr = [];arr.push(2);  //">
 <meta name="keywords" content="javascript,数组">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数组的方法整理">
+<meta property="og:title" content="数组的方法整理（不完全）">
 <meta property="og:url" content="http://yoursite.com/2017/08/21/数组的方法/index.html">
 <meta property="og:site_name" content="程序媛">
-<meta property="og:description" content="数组的方法整理（不完全）pop 删除数组最后一位元素123var arr = [1, 2, 3];arr.pop();  // 3arr;  // [1, 2]   shift 删除数组的第一位元素123var arr = [1, 2, 3];arr.shift();  // 1arr;  // [2, 3]   push 往数组的末尾新增一个或多个元素12345var arr = [];arr.">
-<meta property="og:updated_time" content="2017-08-22T05:24:07.937Z">
+<meta property="og:description" content="pop 删除数组最后一位元素123var arr = [1, 2, 3];arr.pop();  // 3arr;  // [1, 2]   shift 删除数组的第一位元素123var arr = [1, 2, 3];arr.shift();  // 1arr;  // [2, 3]   push 往数组的末尾新增一个或多个元素12345var arr = [];arr.push(2);  //">
+<meta property="og:updated_time" content="2017-08-23T13:04:58.629Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数组的方法整理">
-<meta name="twitter:description" content="数组的方法整理（不完全）pop 删除数组最后一位元素123var arr = [1, 2, 3];arr.pop();  // 3arr;  // [1, 2]   shift 删除数组的第一位元素123var arr = [1, 2, 3];arr.shift();  // 1arr;  // [2, 3]   push 往数组的末尾新增一个或多个元素12345var arr = [];arr.">
+<meta name="twitter:title" content="数组的方法整理（不完全）">
+<meta name="twitter:description" content="pop 删除数组最后一位元素123var arr = [1, 2, 3];arr.pop();  // 3arr;  // [1, 2]   shift 删除数组的第一位元素123var arr = [1, 2, 3];arr.shift();  // 1arr;  // [2, 3]   push 往数组的末尾新增一个或多个元素12345var arr = [];arr.push(2);  //">
   <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   
     <link rel="alternative" href="/atom.xml" title="程序媛" type="application/atom+xml">
@@ -167,7 +167,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      数组的方法整理
+      数组的方法整理（不完全）
     </h1>
   
 
@@ -181,7 +181,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         
-        <h1 id="数组的方法整理（不完全）"><a href="#数组的方法整理（不完全）" class="headerlink" title="数组的方法整理（不完全）"></a>数组的方法整理（不完全）</h1><h2 id="pop"><a href="#pop" class="headerlink" title="pop"></a>pop</h2><ul>
+        <h2 id="pop"><a href="#pop" class="headerlink" title="pop"></a>pop</h2><ul>
 <li>删除数组最后一位元素<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line">arr.pop();  <span class="comment">// 3</span></div><div class="line">arr;  <span class="comment">// [1, 2]</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -210,9 +210,12 @@
 </li>
 </ul>
 <h2 id="slice"><a href="#slice" class="headerlink" title="slice"></a>slice</h2><ul>
-<li>返回一个从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组对象中<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line">arr.slice(<span class="number">1</span>, <span class="number">2</span>); <span class="comment">// [2]</span></div><div class="line">arr;  <span class="comment">// [1, 2, 3, 4]</span></div><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line">arr.slice();  <span class="comment">// [1, 2, 3, 4]</span></div><div class="line">arr.slice(<span class="number">1</span>); <span class="comment">// [2, 3, 4]</span></div></pre></td></tr></table></figure></li>
+<li>返回一个从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组对象中<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line">arr.slice(<span class="number">1</span>, <span class="number">2</span>); <span class="comment">// [2]</span></div><div class="line">arr;  <span class="comment">// [1, 2, 3, 4]</span></div><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</div><div class="line">arr.slice();  <span class="comment">// [1, 2, 3, 4]</span></div><div class="line">arr.slice(<span class="number">1</span>); <span class="comment">// [2, 3, 4]</span></div></pre></td></tr></table></figure>
+</li>
 </ul>
-
+<h2 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">数组.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">value, index, arr</span>)</span>&#123;</div><div class="line">	</div><div class="line">&#125;)</div><div class="line"><span class="comment">//遍历数组，遍历到每个元素的时候，都会调用这个回调函数，</span></div><div class="line"><span class="comment">//value： 当前正在遍历的元素</span></div><div class="line"><span class="comment">//index: 当前正在遍历的元素的索引</span></div><div class="line"><span class="comment">//arr； 当前正在遍历的数组对象</span></div></pre></td></tr></table></figure>
+<h2 id="map"><a href="#map" class="headerlink" title="map"></a>map</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">数组.map(<span class="function"><span class="keyword">function</span>(<span class="params">value, index, arr</span>)</span>&#123;</div><div class="line">	</div><div class="line">&#125;)</div><div class="line"><span class="comment">//遍历数组，遍历到每个元素的时候，都会调用这个回调函数，</span></div><div class="line"><span class="comment">//value： 当前正在遍历的元素</span></div><div class="line"><span class="comment">//index: 当前正在遍历的元素的索引</span></div><div class="line"><span class="comment">//arr； 当前正在遍历的数组对象</span></div><div class="line"></div><div class="line"><span class="comment">//map方法有返回值：</span></div><div class="line"><span class="comment">//每次调用回到函数，都会产生一个返回值，将所有调用返回的返回值组合成一个新的数组，就是map方法的返回值了</span></div></pre></td></tr></table></figure>
+<h2 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">数组.filter(<span class="function"><span class="keyword">function</span>(<span class="params">value, index, arr</span>)</span>&#123;</div><div class="line">	</div><div class="line">&#125;)</div><div class="line"><span class="comment">//遍历数组，遍历到每个元素的时候，都会调用这个回调函数，如果回调函数返回的是true，则当前元素会被加入到返回值数组当中</span></div><div class="line"></div><div class="line"><span class="comment">//value： 当前正在遍历的元素</span></div><div class="line"><span class="comment">//index: 当前正在遍历的元素的索引</span></div><div class="line"><span class="comment">//arr； 当前正在遍历的数组对象</span></div></pre></td></tr></table></figure>
       
 
       
@@ -331,8 +334,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2017/06/29/面向对象三大特性/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">面向对象三大特性</div>
+    <a href="/2017/02/22/懒加载实现原理/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">懒加载的实现原理</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -471,7 +474,19 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">闭包</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">原型</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">变量</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -479,7 +494,23 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">楼层跳跃</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">模块化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">继承</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">返回顶部</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">轮播图</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -488,10 +519,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">特性</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">继承</a>
               </li>
              
               <li class="article-tag-list-item">
