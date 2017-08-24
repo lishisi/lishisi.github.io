@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://yoursite.com/2015/10/12/关于缓存的封装/index.html">
 <meta property="og:site_name" content="程序媛">
 <meta property="og:description" content="缓存封装1234567891011121314function createCache()&amp;#123;	var cache = &amp;#123;&amp;#125;;	var keys = [];	return function(key, value)&amp;#123;		if(value)&amp;#123;			cache[key] = value;			if(keys.push(key) &amp;gt; 20)&amp;#123;">
-<meta property="og:updated_time" content="2017-08-23T13:02:22.171Z">
+<meta property="og:updated_time" content="2017-08-24T00:54:48.300Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于缓存的封装">
 <meta name="twitter:description" content="缓存封装1234567891011121314function createCache()&amp;#123;	var cache = &amp;#123;&amp;#125;;	var keys = [];	return function(key, value)&amp;#123;		if(value)&amp;#123;			cache[key] = value;			if(keys.push(key) &amp;gt; 20)&amp;#123;">
@@ -182,6 +182,7 @@
       
         
         <h3 id="缓存封装"><a href="#缓存封装" class="headerlink" title="缓存封装"></a>缓存封装</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createCache</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> cache = &#123;&#125;;</div><div class="line">	<span class="keyword">var</span> keys = [];</div><div class="line">	<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">key, value</span>)</span>&#123;</div><div class="line">		<span class="keyword">if</span>(value)&#123;</div><div class="line">			cache[key] = value;</div><div class="line">			<span class="keyword">if</span>(keys.push(key) &gt; <span class="number">20</span>)&#123;</div><div class="line">				<span class="keyword">delete</span>[keys.shift()];</div><div class="line">			&#125;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			<span class="keyword">return</span> cache[key];</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="jQuery缓存源码"><a href="#jQuery缓存源码" class="headerlink" title="jQuery缓存源码"></a>jQuery缓存源码</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createCache</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> keys = [];</div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">cache</span>(<span class="params">key, value</span>)</span>&#123;</div><div class="line">		<span class="keyword">if</span>(keys.push(key + <span class="string">" "</span>) &gt; <span class="number">20</span>)&#123;</div><div class="line">			<span class="keyword">delete</span> cache[keys.shift()];</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> (cache[key + <span class="string">" "</span>] = value);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="递归实现的斐波那契数列存在的性能问题"><a href="#递归实现的斐波那契数列存在的性能问题" class="headerlink" title="递归实现的斐波那契数列存在的性能问题"></a>递归实现的斐波那契数列存在的性能问题</h2><p>由于存在大量的重复的计算，所以导致在40多之后，就算不出来了</p>
 <h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ol>
@@ -458,11 +459,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">原型</a>
+                <a href="javascript:void(0)" class="js-tag color3">函数</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">函数</a>
+                <a href="javascript:void(0)" class="js-tag color3">原型</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -486,11 +487,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">返回顶部</a>
+                <a href="javascript:void(0)" class="js-tag color4">轮播图</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">轮播图</a>
+                <a href="javascript:void(0)" class="js-tag color5">返回顶部</a>
               </li>
              
               <li class="article-tag-list-item">
